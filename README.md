@@ -40,4 +40,4 @@
 
     Note pad
         Ease of access
-        Ease of save with current auto logical context.
+        Save to DB and to FS ?
