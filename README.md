@@ -21,7 +21,7 @@
             exit to OS();
     Add view
         ViewSelector();
-    
+
     Video :
         Browse locally or add a network drive to a main videos array
         Use Popcorn like techno
