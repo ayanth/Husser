@@ -1,7 +1,7 @@
-    Ultimate Sitting Room (Uss-R)
+    Ultimate Saloon Stuff'er ! (Uss-R)
 
     NWJS Windows application designed to keep all your sitting room stuff in one place.
-    Multi Document Interface allowing to open a Web Browser, a local Browser, a music player, or a video player. Every one of these features custom made to browse local files, or easily map network drives and add them to the local database.
+    Multi Document Interface allowing to open a Web Browser, a file Browser, a music player, note files, or a video player. Every one of these features custom made to browse local files, or easily map network drives and add them to the local database.
 
     Websockets used to allow browsing of minimal experience on any device on the lan.(Play, Next, Volume, etc.)
 
