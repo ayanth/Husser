@@ -1,5 +1,4 @@
-    Ultimate Saloon Stuff'er ! (Uss-R)
-
+    
     NWJS Windows application designed to keep all your sitting room stuff in one place.
     Multi Document Interface allowing to open a Web Browser, a file Browser, a music player, note files, or a video player. Every one of these features custom made to browse local files, or easily map network drives and add them to the local database.
 
