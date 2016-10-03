@@ -10,5 +10,6 @@
 	window.enterKioskMode();
 
 	window.showDevTools();
+	window.enterFullscreen();
 	//window.setAlwaysOnTop(true);
 })();
