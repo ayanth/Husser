@@ -2,6 +2,7 @@
   "name": "Husser",
   "version": "0.0.1",
   "main": "app/index.html",
+  "chromium-args": "--remote-debugging-port=9222",
   "window": {
     "show": false
   },
