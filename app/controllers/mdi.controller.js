@@ -3,14 +3,20 @@
  */
 angular.module('Husser').controller('MdiController', ['$scope', 'Socket', 'Tabs',
 	function($scope, Socket, Tabs) {
-		$scope.tab = {
-			src: 'https://www.youtube.com/watch?v=PWgvGjAhvIw'
-		};
+		$scope.tabs = [{
+			src: 'http://youtube.com'
+		}];
 		Socket.on('main:connected', function(res) {
 			console.log(res);
 		});
-		$scope.doExit = function(){
+		$scope.removeAtZero = function(){
 			console.log('do exit in mdi controller');
+			$scope.tabs.splice(0,1);
+		};
+		$scope.addTab = function() {
+			$scope.tabs.push({
+				src: 'http://youtube.com'
+			});
 		};
 		Socket.emit('main:connect');
 	}

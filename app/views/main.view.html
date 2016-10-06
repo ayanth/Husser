@@ -34,14 +34,12 @@
 
     <!-- About Section -->
     <section class="content-section">
-        {{tab | json}}
-        <button class="btn btn-lg" ng-click="doExit();"></button>
+        <button class="btn btn-lg" ng-click="removeAtZero();">removeAtZero</button>
+        <button class="btn btn-lg" ng-click="addTab();">AddTab</button>
+        <div ng-repeat="tab in tabs">
+            <web-browser hus-tab="tab" hus-exit="doExit()"></web-browser>
+        </div>
 
-        <!--<div class="row" >-->
-        <!--<div class="col-xs-12" style="width:640px; height:480px">-->
-        <web-browser hus-tab="tab" hus-exit="doExit()"></web-browser>
-        <!--</div>-->
-        <!--</div>-->
 
         <!--<div class="row">-->
         <!--<div class="col-lg-8 col-lg-offset-2">-->

@@ -8,7 +8,41 @@
             Kiosked
             Save every possible string in database (MP3/4 metas, file names, text file content) in database
         ----------------
+	View {
+		All views are web view but the web browser.
+			Browser allow link to be sent to all devices
+		All the local file browser will be built in the web interface
+			Full socket support.
+			Every device local browsing + upload
+			Browse host fs
+			? Scroll event on all devices
+			ng repeat for tab with tab directive
+		use css to show hide tab main view
+		Keep all in ram active
+	}
+
+	LibDaemon {
+		// ? External project
+		Allow daemon to be spawned on host when husser is close for File Watch on every libraries.
+		Maybe as windows service (? else);
+	}
+
+	PseudoPad {
+		? Text event on all devices
+
+	tabDirective {
+		Type
+		Custom header from type
+		WebviewDirective
+	}
+
+	WebviewDirective {
+		// ? External project
+		all content from https://developer.chrome.com/apps/tags/webview binded to angular directive things
+	}
+
     ViewSelector =
+
         Select View:
             Video
             Music
