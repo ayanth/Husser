@@ -42,7 +42,6 @@
 	}
 
     ViewSelector =
-
         Select View:
             Video
             Music
@@ -56,16 +55,13 @@
         ViewSelector();
 
     Video :
-        Browse locally or add a network drive to a main videos array
         Use Popcorn like techno
         Web video to local video
-        Youtube || others(Unquittable) player saving played filled cache as file on pre-parametered dir
-
+        Real time streaming while downloading
     Music :
-        Browse locally or add a network drive to a main videos array
         Use Popcorn-time like techno
         Web video to local video
-        Soundcloud || others (Unquittable) player saving played filled cache as file on pre-parametered dir
+        Real time streaming while downloading
 
     Browser
         100% Free will nested web browser.
