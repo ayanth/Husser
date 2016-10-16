@@ -23,12 +23,14 @@
 
 	LibDaemon {
 		// ? External project
+		Lib : https://github.com/paulmillr/chokidar
 		Allow daemon to be spawned on host when husser is close for File Watch on every libraries.
 		Maybe as windows service (? else);
 	}
 
 	PseudoPad {
 		? Text event on all devices
+	}
 
 	tabDirective {
 		Type
