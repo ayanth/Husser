@@ -5,5 +5,6 @@ var _ = require('lodash');
 
 module.exports = _.assignIn({},
 	{base: require('./base')},
-	{db: require('./db')}
+	{db: require('./db')},
+	{express: require('./express')}
 );

@@ -23,7 +23,7 @@ angular.module('Husser').directive('webBrowser', [
 				$scope.navigate = function(where) {
 					webview.src = where;
 				};
-				$scope.exit = function() {
+				$scope.onExit = function() {
 					console.log('exit in directive');
 				}
 			}

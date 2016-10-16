@@ -1,10 +1,11 @@
 /**
  * Created by Antoine on 2016-10-01.
  */
-exports.create = function(req) {
-
+exports.add = function(req, app) {
+	var newTab = req.data;
+	req.io.broadcast('tabs:added', newTab)
 };
 
-exports.remove = function(req) {
+exports.remove = function(req, app) {
 
 };

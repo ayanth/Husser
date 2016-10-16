@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="Husser">
 <head>
+    <base href="/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,8 +14,9 @@
     <link href="/app/theme/css/grayscale.css" rel="stylesheet">
 
     <link href="/app/css/main.css" rel="stylesheet">
-
-    <script src="/expressio/init.js"></script>
+    <script type="text/javascript">
+        window.husser = {{ husser | json | safe }};
+    </script>
     <title>Husser</title>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -36,18 +38,20 @@
 <script src="/app/directives/bz-module.js"></script>
 <script src="/app/directives/bz-focus.js"></script>
 
-<script src="/app/init.js"></script>
-<script src="/app/configs/configs.js"></script>
-<script src="/app/configs/shortcuts.js"></script>
-<script src="/app/configs/routes.js"></script>
-<script src="/app/services/socket.factory.js"></script>
-<script src="/app/services/tabs.factory.js"></script>
+
+<!--WebApp only deps-->
+<script src="/webapp/init.js"></script>
+
+<script src="/webapp/configs/routes.js"></script>
+
+<script src="/webapp/services/socket.factory.js"></script>
+<script src="/webapp/services/tabs.factory.js"></script>
 
 <!--Controllers-->
-<script src="/app/controllers/mdi.controller.js"></script>
+<script src="/webapp/controllers/mdi.controller.js"></script>
 
 <!--Directives-->
-<script src="/app/directives/tabs/browser/browser.js"></script>
+<script src="/webapp/directives/tabs/browser/browser.js"></script>
 
 </body>
 </html>

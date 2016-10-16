@@ -13,10 +13,11 @@ angular.module('Husser').controller('MdiController', ['$scope', 'Socket', 'Tabs'
 			console.log('do exit in mdi controller');
 			$scope.tabs.splice(0,1);
 		};
-		Tabs.added(function(newTab) {
-			console.log($scope.tabs);
-			$scope.tabs.push(newTab);
-		});
+		$scope.addTab = function() {
+			Tabs.add({
+				src: 'http://youtube.com'
+			});
+		};
 		Socket.emit('main:connect');
 	}
 ]);

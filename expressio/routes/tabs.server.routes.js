@@ -6,8 +6,8 @@ module.exports = function(app) {
 	var controller = require('../controllers/tabs.server.controller.js');
 
 	app.io.route('tabs', {
-		create: function(req) {
-			controller.create(req, app)
+		add: function(req) {
+			controller.add(req, app)
 		},
 		remove: function(req) {
 			controller.remove(req, app)
