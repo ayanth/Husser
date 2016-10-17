@@ -1,15 +1,21 @@
 <div>
-    <div class="row">
+    <div class="row" ng-show="tab.isWebBrowser">
         <div class="col-xs-1">
             <button ng-click="go(-1);">Back</button>
             <button ng-click="go(1);">Next</button>
+        </div>
+        <form ng-submit="navigate(tab.src)">
             <div class="col-xs-10">
                 <input class="form-control" ng-model="tab.src">
             </div>
             <div class="col-xs-1">
-                <button ng-click="navigate(tab.src);">Go</button>
+                <button type="submit">Go</button>
             </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <hus-webview hus-tab="tab" hus-webview-options="webviewOptions"></hus-webview>
         </div>
     </div>
-    <hr>
 </div>
