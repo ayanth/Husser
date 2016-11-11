@@ -2,7 +2,7 @@
  * Created by Antoine on 2016-10-02.
  */
 angular.module('Husser').factory('Socket', function ($rootScope) {
-	var expressConfigs = require('../expressio/configs').base;
+	var expressConfigs = require('../expressio/configs/base');
 	var socket = io.connect('http://' + expressConfigs.ip + ':' + expressConfigs.port);
 
 	return {

@@ -3,8 +3,8 @@
  */
 (function() {
 	'use strict';
-	var gui = require('nw.gui');
-	var window = gui.Window.get();
+	const gui = require('nw.gui');
+	const window = gui.Window.get();
 
 	window.show(true);
 	window.enterKioskMode();

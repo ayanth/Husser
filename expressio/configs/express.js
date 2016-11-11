@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 var configsBase = require('./base');
-var express = require('express');
+var express = require('express.oi');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var favicon = require('serve-favicon');
@@ -113,7 +113,7 @@ module.exports.initClientRoutes = function (app) {
 };
 
 module.exports.init = function (cb) {
-	var app = require('express.io')();
+	var app = express();
 	app.http().io();
 
 	app.use(bodyParser.json({limit: '50mb'}));

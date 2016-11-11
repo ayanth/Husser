@@ -1,9 +1,12 @@
 /**
  * Created by Antoine on 2016-10-01.
  */
+const Tab = require('../models/tabs.model');
 exports.add = function(req, app) {
-	var newTab = req.data;
-	req.io.broadcast('tabs:added', newTab)
+	let tab = new Tab();
+	let newTab = req.data;
+	tab.save();
+	app.io.emit('tabs:added', newTab)
 };
 
 exports.remove = function(req, app) {
