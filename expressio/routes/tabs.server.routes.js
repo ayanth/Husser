@@ -3,7 +3,7 @@
  */
 
 module.exports = function(app) {
-	var controller = require('../controllers/tabs.server.controller.js');
+	let controller = require('../controllers/tabs.server.controller.js');
 
 	app.io.route('tabs', {
 		add: function(req) {

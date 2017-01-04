@@ -11,13 +11,9 @@ let database;
 
 module.exports = {
 	init: function(cb) {
-		console.log(uri);
-		console.log('CONNECTING ');
 		connect(uri)
 			.then(db => {
-				console.log(db);
 				database = db;
-				console.log('CONNECTED ');
 			})
 	}
 };

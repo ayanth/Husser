@@ -2,7 +2,7 @@
   "name": "Husser",
   "version": "0.0.1",
   "main": "app/index.html",
-  "chromium-args": "--remote-debugging-port=9222",
+  "chromium-args": "--remote-debugging-port=9222 --enable-logging --v=1",
   "window": {
     "icon": "favicon.ico",
     "show": false
@@ -13,7 +13,7 @@
     "angular-ui-bootstrap": "^2.0.0",
     "angular-ui-mask": "^1.8.7",
     "angular-ui-router": "^0.3.1",
-    "async": "^2.0.1",
+    "async": "^2.1.2",
     "babel-runtime": "^6.18.0",
     "body-parser": "^1.15.2",
     "bootstrap": "^3.3.7",
@@ -25,6 +25,7 @@
     "core-js": "^2.4.1",
     "express": "^4.14.0",
     "express.oi": "0.0.21",
+    "file-type": "^3.9.0",
     "font-awesome": "^4.6.3",
     "fs-extra": "^0.30.0",
     "helmet": "^2.3.0",
@@ -33,13 +34,17 @@
     "lodash": "^4.16.6",
     "lodash-inflection": "^1.4.1",
     "method-override": "^2.3.6",
+    "mmmagic": "^0.4.5",
     "moment": "^2.15.1",
     "morgan": "^1.7.0",
     "multer": "^1.2.0",
+    "musicmetadata": "^2.0.4",
     "nedb": "^1.8.0",
     "serve-favicon": "^2.3.0",
     "socket.io": "^1.5.1",
     "socket.io-client": "^1.5.1",
-    "swig": "^1.4.2"
+    "swig": "^1.4.2",
+    "synchronize": "^2.0.0",
+    "through2": "^2.0.1"
   }
 }
